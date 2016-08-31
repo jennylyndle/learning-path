@@ -1,0 +1,32 @@
+<article class="row details" style="text-align: center;background-color:inherit !important">
+
+	<div class="col-lg-4 col-md-4 col-xs-4">
+		<img ng-src="{{details.Poster}}" style="width: 100%;"
+			class="img-responsive" />
+	</div>
+	<div class="col-lg-8 col-md-8 col-xs-8">
+		<h1>
+			{{details.Title+'('+details.Year+')'}} <span style="color: yellow">&#9733;<span
+				style="color: grey; font-size: 75%;">{{details.imdbRating}}<span
+					style="font-size: 75%">/10</span></span></span>
+					<span style="font-size: 75%; margin-left: 35px;"><span
+				style="color: grey">{{details.imdbVotes}}</span>&#128077;</span>
+		</h1>
+		<dl class="list-group">
+			<dd class="list-group-item">{{details.Genre+separator+details.Language+separator+details.Runtime+separator+details.Rated}}</dd>
+			<dd class="list-group-item">Director:{{details.Director}}</dd>
+			<dd class="list-group-item">Writer: {{details.Writer}}</dd>
+			<dd class="list-group-item">Cast: {{details.Actors}}</dd>
+			<dd class="list-group-item">
+				<i>{{details.Plot}}</i>
+			</dd>
+			<dd class="list-group-item">{{details.Awards}}</dd>
+			<dd id="moreDetails" class="list-group-item">
+			<div>
+			<a ng-href="http://www.imdb.com/title/{{details.imdbID}}" rel="noopener" target="_tab">View in IMDB</a>
+			</div>
+			<span></span>
+			</dd>
+			</dl>
+	</div>
+</article>

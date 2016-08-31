@@ -1,0 +1,18 @@
+
+<div class="list-group" class="search">
+	<article class="list-group-item row" style="max-height: 5%; width: 100%;margin:0;" ng-repeat="val in results" ng-click="displayDetails(val)">
+		<div class="col-lg-1 col-md-1 col-xs-1" style="margin-right: 15px;">
+			<img class="img-responsive"
+				style="margin-right: 15px; margin-top: 15px;"
+				ng-src="{{val.Poster}}"></img>
+		</div>
+		<div class="col-lg-10 col-md-10 col-xs-10"
+			style="transform: translateY(30%);">
+			<a href="#"
+				ng-click="displayDetails(val.imdbID);$event.stopPropagation()">
+				<h2>{{val.Title+'('+val.Year+')'}}</h2>
+			</a>
+		</div>
+	</article>
+</div>
+
