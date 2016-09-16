@@ -1,0 +1,11 @@
+body{
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+input[type='button']{
+color: white;
+background-color: blue;
+border: 1px black;
+}
